@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WISATA DUFAN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Produk</title>
 </head>
 <body>
-<table>
-    <table border="1" align="center" width="100%" bgcolor="orange">
-        <tr>
-            <td>
-                <h1 align="center">WELCOME TO WISATA DUFAN</h1>
-            </td>
-        </tr>
-
+    <table>
+        <table border="1" align="center" width="100%" bgcolor="orange">
+            <tr>
+                <td>
+                    <h1 align="center">WELCOME TO WISATA DUFAN</h1>
+                </td>
+            </tr>
+    
+        </table>
     </table>
-</table>
-<table border="1" width="70%" align="center" bgcolor="cyan">
-    <tr>
-        <td><a href="index.html">Home</a></td>
-        <td><a href="paketwisata.html">Paket Wisata</a></td>
-        <td><a href="fasilitas.html">Fasilitas</a></td>
-        <td><a href="akomodasi.html">Akomodasi</a></td>
-        <td><a href="galeri.html">Galeri</a></td>
-        <td><a href="produk.html">Produk Dan Souvenir</a></td>
-        <td><a href="sejarahwisata.html">Sejarah Wisata</a></td>
-        <td><a href="lingkungan.html">Taman</a></td>
-        <td><a href="pedesaanjapan.html">Desa Japan</a></td>
-        <td><a href="about.html">About</a></td>
-        <td><a href="contact.html">Contact</a></td>
-    </tr>
-</table>
-
-<div class="wrapper">
+    <div class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paket.html">Paket</a></li>
+            <li><a href="fasilitas.html">Fasilitas</a></li>
+            <li><a href="akomodasi.html">Akomodasi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="taman.html">Taman</a></li>
+            <li><a href="desa.html">Desa Japan</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('active'); 
+});
+    </script>
+   <div class="wrapper">
     <h1>Our Team</h1>
     <div class="our_team">
         <div class="team_member">
@@ -44,26 +53,26 @@
                <div class="instagram item"><i class="fab fa-instagram"></i></div>
              </div>
           </div>
-          <h3>Ahmad Tanri Wali</h3>
+          <h3>Muhammad Rian</h3>
           <span></span>
           <p></p>
         </div>
         <div class="team_member">
            <div class="member_img">
-             <img src="avatarlakilaki.jpg" alt="our_team">
+             <img src="ahmadtanriwali.jpg.jpg" alt="our_team">
              <div class="social_media">
                <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
                <div class="twitter item"><i class="fab fa-twitter"></i></div>
                <div class="instagram item"><i class="fab fa-instagram"></i></div>
              </div>
-          </div>
-          <h3>Muhammad Rian</h3>
+           </div>
+          <h3>Ahmad Tanri Wali</h3>
           <span></span>
           <p></p>
       </div>
         <div class="team_member">
            <div class="member_img">
-             <img src="avatarlakilaki.jpg" alt="our_team">
+             <img src="arya.jpg" alt="our_team">
              <div class="social_media">
                <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
                <div class="twitter item"><i class="fab fa-twitter"></i></div>
@@ -102,7 +111,38 @@
    </div>
     </div>
 </div>	
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
 
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
 
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: lower;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<footer>
+    <p>© ARYASKYEERS.COM</p>
+</footer>    
+    
+    
 </body>
 </html>
